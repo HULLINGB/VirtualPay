@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wallet.brad.virtualpay">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.hardware.camera" />
+    <uses-permission android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-feature
+        android:name="android.hardware.nfc"
+        android:required="true" />
+
+    <uses-permission
+        android:name="android.hardware.bluetooth_le"
+        android:required="true" />
+    <uses-permission android:name="android.hardware.camera" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MT103Request10"/>
+        <activity android:name=".MT103Request9" />
+        <activity android:name=".MT103Request8" />
+        <activity android:name=".MT103Request7" />
+        <activity android:name=".MT103Request6" />
+        <activity android:name=".MT103Request5" />
+        <activity android:name=".MT103Request4" />
+        <activity android:name=".MT103Request3" />
+        <activity android:name=".MT103Request2" />
+        <activity android:name=".QRScanTakePayment10" />
+        <activity android:name=".QRScanTakePayment9" />
+        <activity android:name=".QRScanTakePayment8" />
+        <activity android:name=".QRScanTakePayment7" />
+        <activity android:name=".QRScanTakePayment6" />
+        <activity android:name=".QRScanTakePayment5" />
+        <activity android:name=".QRScanTakePayment4" />
+        <activity android:name=".QRScanTakePayment3" />
+        <activity android:name=".QRScanTakePayment2" />
+        <activity android:name=".MT103Request" />
+        <activity android:name=".HowMuchToPay10" />
+        <activity android:name=".HowMuchToPay9" />
+        <activity android:name=".HowMuchToPay8" />
+        <activity android:name=".HowMuchToPay7" />
+        <activity android:name=".HowMuchToPay6" />
+        <activity android:name=".HowMuchToPay5" />
+        <activity android:name=".HowMuchToPay4" />
+        <activity android:name=".HowMuchToPay3" />
+        <activity android:name=".HowMuchToPay2" />
+        <activity android:name=".QRScanTakePayment" />
+        <activity android:name=".HowMuchToPay" />
+        <activity android:name=".BarcodeScanExtra2" />
+        <activity android:name=".QRScan" />
+        <activity android:name=".QRScan2" />
+        <activity android:name=".QRScan3" />
+        <activity android:name=".QRScan4" />
+        <activity android:name=".QRScan5" />
+        <activity android:name=".QRScan6" />
+        <activity android:name=".QRScan7" />
+        <activity android:name=".QRScan8" />
+        <activity android:name=".QRScan9" />
+        <activity android:name=".QRScan10" />
+        <activity android:name=".BarcodeScan" />
+        <activity android:name=".BarcodeScan3" />
+        <activity android:name=".BarcodeScan4" />
+        <activity android:name=".BarcodeScan5" />
+        <activity android:name=".BarcodeScan6" />
+        <activity android:name=".BarcodeScan7" />
+        <activity android:name=".BarcodeScan8" />
+        <activity android:name=".BarcodeScan9" />
+        <activity android:name=".BarcodeScan10" />
+        <activity android:name=".BarcodeScan11" />
+        <activity android:name=".BarcodeScan12" />
+        <activity android:name=".CaptureAct" />
+        <activity android:name=".AddAccountAndRoutingNumber" />
+        <activity android:name=".PayBarcode" />
+        <activity android:name=".PayBarcode2" />
+        <activity android:name=".PayBarcode3" />
+        <activity android:name=".PayBarcode4" />
+        <activity android:name=".PayBarcode5" />
+        <activity android:name=".PayBarcode6" />
+        <activity android:name=".PayBarcode7" />
+        <activity android:name=".PayBarcode8" />
+        <activity android:name=".PayBarcode9" />
+        <activity android:name=".PayBarcode10" />
+        <activity android:name=".Pay" />
+        <activity android:name=".PayQR" />
+        <activity android:name=".PayQR2" />
+        <activity android:name=".PayQR3" />
+        <activity android:name=".PayQR4" />
+        <activity android:name=".PayQR5" />
+        <activity android:name=".PayQR6" />
+        <activity android:name=".PayQR7" />
+        <activity android:name=".PayQR8" />
+        <activity android:name=".PayQR9" />
+        <activity android:name=".PayQR10" />
+        <activity android:name=".AddAccountAndRoutingNumber10" />
+        <activity android:name=".AddAccountAndRoutingNumber9" />
+        <activity android:name=".AddAccountAndRoutingNumber8" />
+        <activity android:name=".AddAccountAndRoutingNumber7" />
+        <activity android:name=".AddAccountAndRoutingNumber6" />
+        <activity android:name=".AddAccountAndRoutingNumber5" />
+        <activity android:name=".AddAccountAndRoutingNumber4" />
+        <activity android:name=".AddAccountAndRoutingNumber3" />
+        <activity android:name=".AddAccountAndRoutingNumber2" />
+        <activity android:name=".GenerateCardNumber" />
+        <activity android:name=".GenerateCardNumber2" />
+        <activity android:name=".GenerateCardNumber3" />
+        <activity android:name=".GenerateCardNumber4" />
+        <activity android:name=".GenerateCardNumber5" />
+        <activity android:name=".GenerateCardNumber6" />
+        <activity android:name=".GenerateCardNumber7" />
+        <activity android:name=".GenerateCardNumber8" />
+        <activity android:name=".GenerateCardNumber9" />
+        <activity android:name=".GenerateCardNumber10" />
+        <activity android:name=".Cards" />
+        <activity android:name=".Menu" />
+        <activity android:name=".Menu2" />
+        <activity android:name=".Menu3" />
+        <activity android:name=".Menu4" />
+        <activity android:name=".Menu5" />
+        <activity android:name=".Menu6" />
+        <activity android:name=".Menu7" />
+        <activity android:name=".Menu8" />
+        <activity android:name=".Menu9" />
+        <activity android:name=".Menu10" />
+        <activity android:name=".EnterMiddleInitial" />
+        <activity android:name=".EnterFirstAndLastName" /> <!-- for security -->
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".Service"
+            android:enabled="true" />
+
+        <meta-data
+            android:name="com.google.android.gms.vision.DEPENDENCIES"
+            android:value="face" />
+        <meta-data
+            android:name="com.google.android.gms.vision.Frame"
+            android:value="face2" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDQUsTyl8J-izcsAbypt0xGPUX2E2ixi3g" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.wallet.brad.virtualpay.fileprovider"
+            android:exported="false">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+
+            <grant-uri-permission
+                android:grantUriPermissions="true"
+                android:path="/Internal storage" />
+        </provider>
+    </application>
+
+</manifest>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/custom_toast_container"
+              android:orientation="horizontal"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:padding="8dp"
+              android:background="#DAAA"
+              >
+
+    <TextView
+        android:id="@+id/custom_toast_container2"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="8dp"
+        android:background="#DAAA"
+        />
+    <TextView
+        android:id="@+id/custom_toast_container3"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="8dp"
+        android:background="#DAAA"
+        />
+    <TextView
+    android:id="@+id/custom_toast_container4"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="8dp"
+    android:background="#DAAA"
+    />
+
+    <TextView
+        android:id="@+id/custom_toast_container5"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="8dp"
+        android:background="#DAAA"
+        />
+    <TextView
+        android:id="@+id/custom_toast_container6"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="8dp"
+        android:background="#DAAA"
+        />
+    <TextView
+        android:id="@+id/custom_toast_container7"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="8dp"
+        android:background="#DAAA"
+        />
+    <TextView
+        android:id="@+id/custom_toast_container8"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="8dp"
+        android:background="#DAAA"
+        />
+    <TextView
+        android:id="@+id/custom_toast_container9"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="8dp"
+        android:background="#DAAA"
+        />
+    <TextView
+        android:id="@+id/custom_toast_container10"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="8dp"
+        android:background="#DAAA"
+        />
+    <TextView
+        android:id="@+id/custom_toast_container11"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="8dp"
+        android:background="#DAAA"
+        />
+
+
+
+    <TextView android:id="@+id/text"
+              android:text="@string/Welcome_message"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textColor="#ffffff"
+              />
+
+    <TextView android:id="@+id/text2"
+        android:text="@string/Enter_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        />
+
+    <TextView android:id="@+id/text3"
+        android:text="@string/Enter_middle_initial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        />
+
+    <TextView android:id="@+id/text4"
+        android:text="@string/Enter_account_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        />
+
+    <TextView android:id="@+id/text5"
+        android:text="@string/Enter_card_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        />
+
+    <TextView android:id="@+id/text6"
+        android:text="@string/Enter_routing_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        />
+
+    <TextView android:id="@+id/text7"
+        android:text="@string/Enter_account_balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        />
+
+    <TextView android:id="@+id/text8"
+        android:text="@string/Time_option_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        />
+
+    <TextView android:id="@+id/text9"
+        android:text="@string/Voice_authenticator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        />
+
+    <TextView android:id="@+id/text10"
+        android:text="@string/Optical_scanner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        />
+
+    <TextView android:id="@+id/text11"
+        android:text="@string/Optical_scanner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        />
+</LinearLayout>

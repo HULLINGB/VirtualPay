@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddAccountAndRoutingNumber"
+    android:layout_centerHorizontal="true">
+
+    <Button
+        android:id="@+id/backbutton"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:background="@drawable/leftarrow" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="423dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:text="Enter account"
+        android:textSize="@android:dimen/app_icon_size" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Account number"
+        android:id="@+id/entercard"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Routing number"
+        android:id="@+id/enterexpiration"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter"
+        android:id="@+id/enter"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Finish"
+        android:id="@+id/finish"/>
+
+<!--
+    <Button
+        android:id="@+id/ScanQR"
+        android:layout_width="165dp"
+        android:layout_height="172dp"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:background="@drawable/qrcodemain" />
+
+    <Button
+        android:id="@+id/ScanBarcode"
+        android:layout_width="166dp"
+        android:layout_height="195dp"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:background="@drawable/barcodescanmain" />
+
+        -->
+
+</LinearLayout>

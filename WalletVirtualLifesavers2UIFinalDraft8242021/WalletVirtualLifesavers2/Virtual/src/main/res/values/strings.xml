@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Virtual Pay</string>
+    <string name="Welcome_message">Welcome to your wallet</string>
+    <string name="Enter_name">Enter your first and last name</string>
+    <string name="Enter_middle_initial">Enter your middle initial</string>
+    <string name="Enter_account_number">Enter your account number</string>
+    <string name="Enter_card_number">Enter your card number</string>
+    <string name="Enter_routing_number">Enter your routing number</string>
+    <string name="Enter_account_balance">Enter your account balance</string>
+    <string name="Time_option_switch">Switch time option on/off</string>
+    <string name="Voice_authenticator">Now let\'s set up the voice authenticator</string>
+    <string name="Optical_scanner">Now let\'s set up the optical scanner</string>
+    <string name="Optical_scanner_message">Hold the camera close to your eye</string>
+    <string name="Card_holderFN">customerNameFirst</string>
+    <string name="Card_holderMI">customerNameInitial</string>
+    <string name="Card_holderLN">customerNameLast</string>
+    <string name="Bank">bankName</string>
+    <string name="enterHere">EntryBox</string>
+    <string name="external_dir">Macintosh HD/Users/bradhullinger/Documents/GitHub/Walletapp/walletvirtuallifesavers</string>
+
+</resources>

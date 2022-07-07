@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Virtual/Virtual.iml" filepath="$PROJECT_DIR$/Virtual/Virtual.iml" group="WalletVirtualLifesavers2/Virtual" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/WalletVirtualLifesavers2.iml" filepath="$PROJECT_DIR$/.idea/modules/WalletVirtualLifesavers2.iml" group="WalletVirtualLifesavers2" />
+    </modules>
+  </component>
+</project>

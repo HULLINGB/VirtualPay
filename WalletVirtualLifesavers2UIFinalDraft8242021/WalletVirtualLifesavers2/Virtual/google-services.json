@@ -1,0 +1,48 @@
+{
+    "project_info": {
+        "project_number": "975479737274",
+        "firebase_url": "https://cumgetme4-5651b.firebaseio.com",
+        "project_id": "cumgetme4-5651b",
+        "storage_bucket": "cumgetme4-5651b.appspot.com"
+    },
+    "client": [
+        {
+            "client_info": {
+                "mobilesdk_app_id": "1:975479737274:android:158cff3f0b84c747f56b83",
+                "android_client_info": {
+                    "package_name": "com.wallet.brad.virtualpay"
+                }
+            },
+            "oauth_client": [
+                {
+                    "client_id": "975479737274-l8j1e7itc6402llbeh7hd6c28scg3tsr.apps.googleusercontent.com",
+                    "client_type": 1,
+                    "android_info": {
+                        "package_name": "com.wallet.n.walletvirtuallifesavers;",
+                        "certificate_hash": "d974abf8c4d582e92fb92509c98435727d36ffc0"
+                    }
+                },
+                {
+                    "client_id": "975479737274-bdi8mgodctmlla56mmd26qsf7j8om1vf.apps.googleusercontent.com",
+                    "client_type": 3
+                }
+            ],
+            "api_key": [
+                {
+                    "current_key": "AIzaSyBkepCHzmSA80eLX1ljpanB9M3PnXYcVSs"
+                }
+            ],
+            "services": {
+                "appinvite_service": {
+                    "other_platform_oauth_client": [
+                        {
+                            "client_id": "975479737274-bdi8mgodctmlla56mmd26qsf7j8om1vf.apps.googleusercontent.com",
+                            "client_type": 3
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "configuration_version": "1"
+}
