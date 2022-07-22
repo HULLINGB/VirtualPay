@@ -9,16 +9,9 @@
 
     <Button
         android:id="@+id/backbutton"
-        android:layout_width="35dp"
-        android:layout_height="35dp"
-        android:background="@drawable/leftarrow" />
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="cursive"
-        android:textSize="@android:dimen/app_icon_size"
-        android:text="Enter middle initial" />
+        android:layout_width="103dp"
+        android:layout_height="84dp"
+        android:background="@drawable/letterv2" />
 
 
     <EditText

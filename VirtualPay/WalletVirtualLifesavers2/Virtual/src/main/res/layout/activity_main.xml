@@ -8,13 +8,11 @@
 	tools:context=".MainActivity"
 	android:layout_centerHorizontal="true">
 
-	<TextView
-		android:id="@+id/textView"
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		android:fontFamily="cursive"
-		android:textSize="@android:dimen/app_icon_size"
-		android:text="Virtual Pay" />
+	<Button
+		android:id="@+id/menuButton"
+		android:layout_width="103dp"
+		android:layout_height="84dp"
+		android:background="@drawable/letterv2" />
 
 	<Button
 		android:id="@+id/login"

@@ -27,6 +27,7 @@ public class MainActivity extends Activity {
 			mLogin = (Button) findViewById(R.id.login);
 			mRegistration = (Button) findViewById(R.id.registration);
 
+
 			/**
 			 Welcome Message
 			 **/

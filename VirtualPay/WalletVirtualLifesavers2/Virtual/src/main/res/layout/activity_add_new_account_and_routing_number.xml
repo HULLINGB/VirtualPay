@@ -7,19 +7,12 @@
     tools:context=".AddAccountAndRoutingNumber"
     android:layout_centerHorizontal="true">
 
+
     <Button
         android:id="@+id/backbutton"
-        android:layout_width="35dp"
-        android:layout_height="35dp"
-        android:background="@drawable/leftarrow" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="423dp"
-        android:layout_height="wrap_content"
-        android:fontFamily="cursive"
-        android:text="Enter account"
-        android:textSize="@android:dimen/app_icon_size" />
+        android:layout_width="103dp"
+        android:layout_height="84dp"
+        android:background="@drawable/letterv2" />
 
 
     <EditText

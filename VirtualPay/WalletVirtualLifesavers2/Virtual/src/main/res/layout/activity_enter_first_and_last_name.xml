@@ -13,15 +13,9 @@ android:layout_centerHorizontal="true">
         android:id="@+id/backbutton"
         android:layout_width="35dp"
         android:layout_height="35dp"
-        android:background="@drawable/leftarrow" />
+        android:background="@drawable/letterv2" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="cursive"
-        android:textSize="@android:dimen/app_icon_size"
-        android:text="Enter name" />
+
 
 
 <EditText
