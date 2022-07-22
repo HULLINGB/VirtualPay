@@ -153,9 +153,7 @@ public class QRScanTakePayment extends Activity implements ZXingScannerView.Resu
                 public void onClick(DialogInterface dialog, int which) {
                     //scannerView.resumeCameraPreview(QRScan.this);
 
-
                     scannerView.resumeCameraPreview(QRScanTakePayment.this);
-
 
                 }
 
