@@ -26,7 +26,10 @@ import java.util.Random;
 
 public class MT103Request extends Activity {
 
-    public static String chosenCard = "";
+    public String payAmount = "";
+    String accountChoice = "";
+    int accountChoi = 0;
+    String chosenAccount = "";
     private SQLiteDatabase mDB = null;
     private SimpleCursorAdapter mAdapter;
     private SQLiteDatabase mDB3 = null;
@@ -34,7 +37,7 @@ public class MT103Request extends Activity {
     private SQLiteDatabase mDB2 = null;
     private SimpleCursorAdapter mAdapter2;
 
-    int accountChoice = 0;
+    //int accountChoice = 0;
 
     String paymentInfo = "";
 
@@ -43,6 +46,7 @@ public class MT103Request extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pay2);
 
+
         final DatabaseOpenHelperChooseCard myDb;
         myDb = new DatabaseOpenHelperChooseCard(this);
         final DatabaseOpenHelper4 myDb3;
@@ -50,38 +54,73 @@ public class MT103Request extends Activity {
         final DatabaseOpenHelperTakePayment myDb2;
         myDb2 = new DatabaseOpenHelperTakePayment(this);
 
-        try {
 
 
-            mDB = myDb.getReadableDatabase();
-            Cursor c = mDB.rawQuery("SELECT " + DatabaseOpenHelperChooseCard.ACCOUNT_CHOICE + " FROM account_choice", null);
+        try{
+            mDB3 = myDb3.getReadableDatabase();
+            Cursor c = mDB3.rawQuery("SELECT " + DatabaseOpenHelperChooseCard.ACCOUNT_CHOICE + " FROM account_choice", null);
 
             if (c != null) {
                 if (c.moveToFirst()) {
                     do {
-                        accountChoice = c.getColumnIndex("accountchoice");
+                        accountChoice = c.getString(c.getColumnIndex("accountchoice"));
 
                     } while (c.moveToNext());
                 }
                 c.close();
+                mDB = myDb.getReadableDatabase();
+                Cursor c2 = mDB.rawQuery("SELECT " + DatabaseOpenHelper4.CARD_NUMBER + " FROM fake_info", null);
 
-
-                mDB3 = myDb3.getReadableDatabase();
-                Cursor c2 = mDB3.rawQuery("SELECT " + DatabaseOpenHelper4.CARD_NUMBER + " FROM fake_info", null);
-
-                if (c2 != null) {
-                    for(int i = 0; i < accountChoice; i++) {
-
-                        chosenCard = c2.getString(c2.getColumnIndex("fakenumber"));
-                        c2.moveToNext();
-                    }
-                    }
-                    c2.close();
-
-
+                if(accountChoice.equals("1"))
+                {
+                    accountChoi = 1;
+                }
+                if(accountChoice.equals("2"))
+                {
+                    accountChoi = 2;
+                }
+                if(accountChoice.equals("3"))
+                {
+                    accountChoi = 3;
+                }
+                if(accountChoice.equals("4"))
+                {
+                    accountChoi = 4;
+                }
+                if(accountChoice.equals("5"))
+                {
+                    accountChoi = 5;
+                }
+                if(accountChoice.equals("6"))
+                {
+                    accountChoi = 6;
+                }
+                if(accountChoice.equals("7"))
+                {
+                    accountChoi = 7;
+                }
+                if(accountChoice.equals("8"))
+                {
+                    accountChoi = 8;
+                }
+                if(accountChoice.equals("9"))
+                {
+                    accountChoi = 9;
+                }
+                if(accountChoice.equals("10"))
+                {
+                    accountChoi = 10;
                 }
 
 
+                if (c2 != null) {
+
+                    c2.moveToPosition(accountChoi - 1);
+                    chosenAccount = c2.getString(c2.getColumnIndex("fakenumber"));
+                    c2.close();
+
+                }
+            }
                 mDB2 = myDb2.getReadableDatabase();
                 Cursor c3 = mDB2.rawQuery("SELECT " + DatabaseOpenHelperTakePayment.PAYMENT_INFO + " FROM accept_payment", null);
 
@@ -170,7 +209,7 @@ public class MT103Request extends Activity {
 
 
         String text2 = "";
-        text2 = "To:  " + chosenCard + "  (Still testing feature)";
+        text2 = "To:  " + chosenAccount + "  (Still testing feature)";
         Context context2 = getApplicationContext();
 
         int duration2 = Toast.LENGTH_SHORT;
