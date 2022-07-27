@@ -64,16 +64,18 @@ public class PayQR extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pay2);
 
-        final DatabaseOpenHelper4 myDb;
-        myDb = new DatabaseOpenHelper4(this);
-        final DatabaseOpenHelperAmount myDb2;
-        myDb2 = new DatabaseOpenHelperAmount(this);
-        final DatabaseOpenHelperChooseCard myDb3;
-        myDb3 = new DatabaseOpenHelperChooseCard(this);
+        final DatabaseOpenHelperChooseCard myDb;
+        myDb = new DatabaseOpenHelperChooseCard(this);
+
+        final DatabaseOpenHelper4 myDb2;
+        myDb2 = new DatabaseOpenHelper4(this);
+
+        final DatabaseOpenHelperAmount myDb3;
+        myDb3 = new DatabaseOpenHelperAmount(this);
 
         try{
-            mDB3 = myDb3.getReadableDatabase();
-            Cursor c = mDB3.rawQuery("SELECT " + DatabaseOpenHelperChooseCard.ACCOUNT_CHOICE + " FROM account_choice", null);
+            mDB = myDb.getReadableDatabase();
+            Cursor c = mDB.rawQuery("SELECT " + DatabaseOpenHelperChooseCard.ACCOUNT_CHOICE + " FROM account_choice", null);
 
             if (c != null) {
                 if (c.moveToFirst()) {
@@ -83,8 +85,8 @@ public class PayQR extends Activity {
                     } while (c.moveToNext());
                 }
                 c.close();
-                mDB = myDb.getReadableDatabase();
-                Cursor c2 = mDB.rawQuery("SELECT " + DatabaseOpenHelper4.CARD_NUMBER + " FROM fake_info", null);
+                mDB2 = myDb2.getReadableDatabase();
+                Cursor c2 = mDB2.rawQuery("SELECT " + DatabaseOpenHelper4.CARD_NUMBER + " FROM fake_info", null);
 
                 if(accountChoice.equals("1"))
                 {
@@ -137,15 +139,8 @@ public class PayQR extends Activity {
                 }
             }
 
-            String text2 = "";
-            text2 = " Account number:  " + chosenAccount + " ";
-            Context context2 = getApplicationContext();
-
-            int duration2 = Toast.LENGTH_SHORT;
 
 
-            Toast toast2 = Toast.makeText(context2, text2, duration2);
-            toast2.show();
 
         }catch(Exception e)
         {
@@ -154,12 +149,12 @@ public class PayQR extends Activity {
 
 
         try {
-            mDB2 = myDb2.getReadableDatabase();
+            mDB3 = myDb3.getReadableDatabase();
 
             validNumber = true;
             int j = 0;
 
-            Cursor c3 = mDB2.rawQuery("SELECT " + DatabaseOpenHelperAmount.PAY_AMOUNT + " FROM pay_amount", null);
+            Cursor c3 = mDB3.rawQuery("SELECT " + DatabaseOpenHelperAmount.PAY_AMOUNT + " FROM pay_amount", null);
 
             if (c3 != null) {
                 if (c3.moveToFirst()) {
@@ -171,9 +166,17 @@ public class PayQR extends Activity {
                 c3.close();
 
 
-
-
                 finalQRPattern = payAmount + chosenAccount;
+                String text2 = "";
+                text2 = " Account number:  " + chosenAccount + " " + "Pay amount:" + payAmount;
+                Context context2 = getApplicationContext();
+
+                int duration2 = Toast.LENGTH_SHORT;
+
+
+                Toast toast2 = Toast.makeText(context2, text2, duration2);
+                toast2.show();
+
             }
 
 

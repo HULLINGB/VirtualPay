@@ -49,16 +49,16 @@ public class MT103Request extends Activity {
 
         final DatabaseOpenHelperChooseCard myDb;
         myDb = new DatabaseOpenHelperChooseCard(this);
-        final DatabaseOpenHelper4 myDb3;
-        myDb3 = new DatabaseOpenHelper4(this);
-        final DatabaseOpenHelperTakePayment myDb2;
-        myDb2 = new DatabaseOpenHelperTakePayment(this);
+        final DatabaseOpenHelper4 myDb2;
+        myDb2 = new DatabaseOpenHelper4(this);
+        final DatabaseOpenHelperTakePayment myDb3;
+        myDb3 = new DatabaseOpenHelperTakePayment(this);
 
 
 
         try{
-            mDB3 = myDb3.getReadableDatabase();
-            Cursor c = mDB3.rawQuery("SELECT " + DatabaseOpenHelperChooseCard.ACCOUNT_CHOICE + " FROM account_choice", null);
+            mDB = myDb.getReadableDatabase();
+            Cursor c = mDB.rawQuery("SELECT " + DatabaseOpenHelperChooseCard.ACCOUNT_CHOICE + " FROM account_choice", null);
 
             if (c != null) {
                 if (c.moveToFirst()) {
@@ -68,8 +68,8 @@ public class MT103Request extends Activity {
                     } while (c.moveToNext());
                 }
                 c.close();
-                mDB = myDb.getReadableDatabase();
-                Cursor c2 = mDB.rawQuery("SELECT " + DatabaseOpenHelper4.CARD_NUMBER + " FROM fake_info", null);
+                mDB2 = myDb2.getReadableDatabase();
+                Cursor c2 = mDB2.rawQuery("SELECT " + DatabaseOpenHelper4.CARD_NUMBER + " FROM fake_info", null);
 
                 if(accountChoice.equals("1"))
                 {
@@ -121,8 +121,8 @@ public class MT103Request extends Activity {
 
                 }
             }
-                mDB2 = myDb2.getReadableDatabase();
-                Cursor c3 = mDB2.rawQuery("SELECT " + DatabaseOpenHelperTakePayment.PAYMENT_INFO + " FROM accept_payment", null);
+                mDB3 = myDb3.getReadableDatabase();
+                Cursor c3 = mDB3.rawQuery("SELECT " + DatabaseOpenHelperTakePayment.PAYMENT_INFO + " FROM accept_payment", null);
 
                 if (c3 != null) {
                     if (c3.moveToFirst()) {
